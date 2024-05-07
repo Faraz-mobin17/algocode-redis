@@ -1,5 +1,5 @@
 import express, { Express } from 'express';
-import serverConfig from './config/serverConfig';
+import serverConfig from './configs/serverConfig';
 import apiRouter from './routes';
 const app: Express = express();
 app.use('/api', apiRouter);
