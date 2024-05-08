@@ -12,10 +12,47 @@ app.listen(serverConfig.PORT, () => {
 
   SampleWorker('SampleQueue');
 
-  sampleQueueProducer('SampleJob', {
-    name: 'Faraz',
-    company: 'Microsoft',
-    position: 'SDE 2 L61',
-    location: 'Remote | BLR | Noida',
-  });
+  sampleQueueProducer(
+    'SampleJob',
+    {
+      name: 'Sanket',
+      company: 'Microsoft',
+      position: 'SDE 2 L61',
+      location: 'Remote | BLR | Noida',
+    },
+    2,
+  );
+
+  sampleQueueProducer(
+    'SampleJob',
+    {
+      name: 'Faraz',
+      company: 'Microsoft',
+      position: 'SDE 2 L61',
+      location: 'Remote | BLR | Noida',
+    },
+    1,
+  );
+
+  sampleQueueProducer(
+    'SampleJob',
+    {
+      name: 'Ram',
+      company: 'Ciena',
+      position: 'SDE',
+      location: 'Noida',
+    },
+    3,
+  );
+
+  sampleQueueProducer(
+    'SampleJob',
+    {
+      name: 'Teena',
+      company: 'Vouchagram',
+      position: 'Frontend Developer',
+      location: 'Noida',
+    },
+    4,
+  );
 });
